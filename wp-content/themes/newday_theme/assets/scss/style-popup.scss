@@ -1,0 +1,746 @@
+.popup__contact-us {
+  display: flex;
+  flex-direction: column;
+  width: 610px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  .contact-us__closed {
+    display: flex;
+    justify-content: flex-end;
+    svg {
+      cursor: pointer;
+      stroke-width: 0.1;
+      scale: 1;
+      transition: all 0.3s;
+    }
+    svg:hover {
+      stroke-width: 0.7;
+      scale: 1.1;
+    }
+  }
+  .contact-us__first-text {
+    font-family: BlissPro-Light;
+    font-size: 36px;
+    line-height: 43px;
+    color: #262626;
+    margin-left: 15px;
+  }
+  .contact-us__second-text {
+    font-family: BlissPro-Light;
+    font-size: 18px;
+    line-height: 21px;
+    color: #262626;
+    margin-top: 8px;
+    margin-left: 15px;
+  }
+  .contact-us__info-area {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    .wpcf7-not-valid {
+      border: 1px solid #ff7272 !important;
+    }
+    .info-area__name, .info-area__email, .info-area__phone, .info-area__message {
+      margin-top: 10px;
+    }
+    .info-area__name, .info-area__email, .info-area__phone {
+      padding-left: 20px;
+      height: 45px;
+      width: 550px;
+      font-family: BlissPro-Light;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      border: 1px solid #8E8E8E;
+      border-radius: 22.5px;
+    }
+    .info-area__message {
+      padding-top: 5px;
+      padding-left: 20px;
+      width: 550px;
+      height: 115px;
+      font-family: BlissPro-Light;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      border: 1px solid #8E8E8E;
+      border-radius: 22.5px;
+      resize: none;
+    }
+    .info-area__checkbox {
+      width: 14px;
+      height: 14px;
+      border: 1px solid #262626;
+      border-radius: 4px;
+    }
+    .wpcf7-form-control-wrap {
+      display: flex;
+      flex-direction: column-reverse;
+      font-family: BlissPro-Light;
+      font-size: 20px;
+      color: #ff7272;
+      .wpcf7-not-valid-tip {
+        margin-top: 5px;
+      }
+    }
+    .wpcf7-list-item {
+      margin-top: 25px;
+      margin-left: 5px;
+      label {
+        display: flex;
+        align-items: center;
+        input[type=checkbox] {
+          cursor: pointer;
+          margin: unset;
+          &:before {
+            content: '';
+            position: absolute;
+            margin-left: 1px;
+            width: 14px;
+            height: 14px;
+            background-size: 11px;
+            background-repeat: no-repeat;
+          }
+          &:checked:before {
+            background-image: url("/wp-content/themes/newday_theme/assets/images/checked-black.svg");
+          }
+          &:focus:not(:checked) {
+            &:before {
+              background-image: none;
+            }
+          }
+        }
+        .wpcf7-list-item-label {
+          margin-left: 10px;
+          font-family: BlissPro-Light;
+          font-size: 14px;
+          line-height: 17px;
+          color: #262626;
+          cursor: pointer;
+          a {
+            color: #000000;
+            text-underline-offset: 3px
+          }
+          a:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .info-area__button {
+      margin-top: 32px;
+      width: 550px;
+      height: 45px;
+      font-family: BlissPro-Medium;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 22.5px;
+      background-color: #1F4D30;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+    .info-area__button:hover {
+      background-color: #000000;
+    }
+    .info-area__button:disabled {
+      cursor: unset;
+      background-color: #848484;
+    }
+    .wpcf7-spinner {
+      display: none;
+    }
+  }
+  .wpcf7-response-output {
+    display: none !important;
+  }
+}
+
+
+.popup__vacancy {
+  display: flex;
+  flex-direction: column;
+  width: 610px;
+  padding-top: 29px;
+  padding-bottom: 36px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  .vacancy__closed {
+    display: flex;
+    justify-content: flex-end;
+    svg {
+      cursor: pointer;
+      stroke-width: 0.1;
+      scale: 1;
+      transition: all 0.3s ease-in-out;
+    }
+    svg:hover {
+      scale: 1.1;
+      stroke-width: 0.7;
+    }
+  }
+  .vacancy__first-text {
+    font-family: BlissPro-Light;
+    font-size: 36px;
+    line-height: 43px;
+    color: #262626;
+  }
+  .vacancy__second-text {
+    font-family: BlissPro-Light;
+    font-size: 18px;
+    line-height: 22px;
+    color: #262626;
+    margin-top: 18px;
+  }
+  .vacancy__info-area {
+    margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    .wpcf7-not-valid {
+      border: 1px solid #ff7272 !important;
+    }
+    .info-area__name, .info-area__email, .info-area__phone {
+      margin-top: 10px;
+    }
+    .info-area__link {
+      margin-top: 17px;
+    }
+    .info-area__name, .info-area__email, .info-area__phone, .info-area__link {
+      height: 45px;
+      width: 550px;
+      font-family: BlissPro-Light;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      border: 1px solid #8E8E8E;
+      border-radius: 22.5px;
+      padding-left: 19px;
+    }
+    .info-area__checkbox {
+      width: 14px;
+      height: 14px;
+      border: 1px solid #262626;
+      border-radius: 4px;
+    }
+    .wpcf7-form-control-wrap {
+      display: flex;
+      flex-direction: column-reverse;
+      font-family: BlissPro-Light;
+      font-size: 20px;
+      color: #ff7272;
+      .wpcf7-not-valid-tip {
+        margin-top: 5px;
+      }
+    }
+
+    .codedropz-upload-handler {
+      border: 2px dashed #D6D6D6;
+      margin-bottom: unset;
+      margin-top: 17px;
+      .codedropz-upload-container {
+        padding: 23px;
+        .codedropz-upload-inner {
+          div {
+            font-family: BlissPro-Regular;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+          }
+          span {
+            font-family: BlissPro-Regular;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+          }
+          @include tablet {
+            div {
+              display: none;
+            }
+            span {
+              display: none;
+            }
+            .codedropz-btn-wrap {
+              display: block;
+            }
+          }
+          .codedropz-btn-wrap {
+            .cd-upload-btn {
+              color: #47B16F;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                color: #EE7100;
+              }
+            }
+          }
+        }
+      }
+      .dnd-upload-counter {
+        display: none;
+      }
+    }
+    .dnd-upload-status.complete {
+      .dnd-upload-details {
+        .dnd-progress-bar {
+          display: none;
+        }
+      }
+    }
+    .dnd-upload-status {
+      margin-top: 15px;
+      padding: unset;
+      .dnd-upload-image {
+        display: none;
+      }
+      .dnd-upload-details {
+        width: 100%;
+        padding-left: unset;
+        display: grid;
+        grid-template-areas: 'name dnd-progress-bar remove-file' 'has-error has-error has-error';
+        grid-template-columns: minmax(200px, 480px) auto auto;
+        @include mobile {
+          grid-template-columns: minmax(200px, 255px) auto auto;
+        }
+        .has-error {
+          position: absolute;
+          top: 18px;
+          font-family: BlissPro-Regular;
+          font-size: 16px;
+          line-height: 24px;
+        }
+        .name {
+          padding: unset;
+          padding-right: unset;
+          span {
+            font-family: BlissPro-Regular;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+          }
+          em {
+            display: none;
+          }
+        }
+        .dnd-progress-bar {
+          display: unset;
+          border-radius: unset;
+          overflow: unset;
+          background: unset;
+          height: unset;
+          span {
+            background: unset;
+            font-family: BlissPro-Regular;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            width: unset !important;
+            text-align: unset;
+            height: unset;
+          }
+        }
+        .remove-file {
+          font-size: 0;
+          .dnd-icon-remove {
+            font-size: 0;
+            color: white;
+            &:after {
+              position: relative;
+              bottom: 5px;
+            }
+          }
+          .dnd-icon-remove.deleting {
+            top: -10px !important;
+            &:before {
+              margin-top: 5px;
+              content: '';
+              width: 15px;
+              height: 15px;
+              display: block;
+              background-repeat: no-repeat;
+              background-size: 100%;
+              background-image: url("data:image/svg+xml,%3Csvg width='35' height='35' viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.5 0C7.83499 0 0 7.83499 0 17.5C0 27.165 7.83499 35 17.5 35C27.165 35 35 27.165 35 17.5C34.9888 7.83965 27.1604 0.0112198 17.5 0ZM17.5 33.871C8.45857 33.871 1.12903 26.5414 1.12903 17.5C1.12903 8.45857 8.45857 1.12903 17.5 1.12903C26.5414 1.12903 33.871 8.45857 33.871 17.5C33.861 26.5373 26.5373 33.861 17.5 33.871Z' fill='black'/%3E%3Cpath d='M25.4834 9.51661C25.2629 9.29624 24.9056 9.29624 24.6852 9.51661L17.5 16.7018L10.3148 9.51661C10.0983 9.29236 9.74087 9.28615 9.51661 9.50271C9.29236 9.71927 9.28615 10.0767 9.50271 10.3009C9.50723 10.3057 9.51188 10.3103 9.51661 10.3148L16.7018 17.5L9.51661 24.6852C9.29236 24.9018 9.28615 25.2591 9.50278 25.4834C9.71941 25.7076 10.0768 25.7139 10.301 25.4972C10.3057 25.4927 10.3103 25.488 10.3148 25.4834L17.5 18.2982L24.6852 25.4834C24.9094 25.7 25.2668 25.6938 25.4834 25.4696C25.6947 25.2508 25.6947 24.9039 25.4834 24.6852L18.2982 17.5L25.4834 10.3148C25.7038 10.0944 25.7038 9.73705 25.4834 9.51661Z' fill='black'/%3E%3C/svg%3E%0A");
+            }
+          }
+        }
+      }
+    }
+
+    .wpcf7-list-item {
+      margin-top: 25px;
+      margin-left: 5px;
+      label {
+        display: flex;
+        align-items: center;
+        input[type=checkbox] {
+          cursor: pointer;
+          margin: unset;
+          &:before {
+            content: '';
+            position: absolute;
+            margin-left: 1px;
+            width: 14px;
+            height: 14px;
+            background-size: 11px;
+            background-repeat: no-repeat;
+          }
+          &:checked:before {
+            background-image: url("/wp-content/themes/newday_theme/assets/images/checked-black.svg");
+          }
+          &:focus:not(:checked) {
+            &:before {
+              background-image: none;
+            }
+          }
+        }
+        .wpcf7-list-item-label {
+          margin-left: 8px;
+          font-family: BlissPro-Light;
+          font-size: 14px;
+          line-height: 17px;
+          color: #262626;
+          cursor: pointer;
+          a {
+            color: #000000;
+            text-underline-offset: 3px
+          }
+          a:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .info-area__button {
+      margin-top: 30px;
+      width: 550px;
+      height: 45px;
+      font-family: BlissPro-Medium;
+      font-size: 20px;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 22.5px;
+      background-color: #1F4D30;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+    .info-area__button:hover {
+      background-color: #000000;
+    }
+    .info-area__button:disabled {
+      cursor: unset;
+      background-color: #848484;
+    }
+    .wpcf7-spinner {
+      display: none;
+    }
+  }
+  .wpcf7-response-output {
+    display: none !important;
+  }
+}
+
+.popup__sent {
+  display: flex;
+  gap: 21px;
+  width: 485px;
+  height: 402px;
+  padding-top: 17px;
+  padding-bottom: 80px;
+  padding-left: 55px;
+  padding-right: 17px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  .sent__closed {
+    svg {
+      cursor: pointer;
+      stroke-width: 0.1;
+      transition: stroke-width 0.3s;
+    }
+    svg:hover {
+      stroke-width: 0.6;
+    }
+  }
+  .sent__info {
+    display: flex;
+    flex-direction: column;
+    .info__image {
+      display: flex;
+      margin-top: 64px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .info__text {
+      display: flex;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 374px;
+      font-family: BlissPro-Light;
+      font-size: 40px;
+      line-height: 48px;
+      color: #262626;
+      text-align: center;
+    }
+  }
+}
+
+.popup__failed {
+  display: flex;
+  gap: 37px;
+  width: 485px;
+  height: 402px;
+  padding-top: 17px;
+  padding-bottom: 80px;
+  padding-left: 70px;
+  padding-right: 17px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  .failed__closed {
+    svg {
+      cursor: pointer;
+      stroke-width: 0.1;
+      transition: stroke-width 0.3s;
+    }
+    svg:hover {
+      stroke-width: 0.6;
+    }
+  }
+  .failed__info {
+    display: flex;
+    flex-direction: column;
+    .info__image {
+      display: flex;
+      margin-top: 65px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .info__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 13px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 345px;
+      .text__top {
+        font-family: BlissPro-Light;
+        font-size: 40px;
+        line-height: 48px;
+        color: #262626;
+      }
+      .text__bottom {
+        font-family: BlissPro-Light;
+        font-size: 24px;
+        line-height: 29px;
+        color: #262626;
+      }
+    }
+  }
+}
+
+@include small-mobile {
+  .popup__contact-us {
+    width: 346px;
+    padding-top: 15px;
+    padding-bottom: 26px;
+    padding-left: 12px;
+    padding-right: 12px;
+    .contact-us__first-text {
+      font-size: 32px;
+      line-height: 38px;
+      margin-left: 12px;
+    }
+    .contact-us__second-text {
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 10px;
+      margin-left: 12px;
+    }
+    .contact-us__info-area {
+      margin-top: 18px;
+      margin-left: auto;
+      margin-right: auto;
+      .info-area__name, .info-area__email, .info-area__phone {
+        padding-left: 15px;
+        width: 322px;
+        border-radius: 25px;
+      }
+      .info-area__message {
+        padding-top: 5px;
+        padding-left: 15px;
+        width: 322px;
+        height: 105px;
+        border-radius: 25px;
+      }
+      .wpcf7-list-item {
+        margin-top: 15px;
+        margin-left: unset;
+        label {
+          display: flex;
+          align-items: flex-start;
+          .wpcf7-list-item-label {
+            width: 233px;
+          }
+        }
+      }
+      .info-area__button {
+        margin-top: 20px;
+        width: 322px;
+        border-radius: 45px;
+      }
+    }
+  }
+
+
+  .popup__vacancy {
+    width: 346px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 15px;
+    .vacancy__first-text {
+      font-size: 32px;
+      line-height: 38px;
+      margin-left: 12px;
+    }
+    .vacancy__second-text {
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 10px;
+      margin-left: 12px;
+    }
+    .vacancy__info-area {
+      margin-top: 30px;
+      .info-area__link {
+        width: 322px;
+        border-radius: 25px;
+        margin-top: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 16px;
+        font-size: 14px;
+        line-height: 16px;
+      }
+      .info-area__link::placeholder {
+        width: 241px;
+        white-space: normal;
+        text-align: center;
+      }
+      .info-area__name, .info-area__email, .info-area__phone {
+        width: 322px;
+        border-radius: 25px;
+        padding-left: 16px;
+      }
+      label[for=your-file] {
+        height: 71px;
+        margin-top: 15px;
+        padding-top: 32px;
+        border-radius: 3px;
+        .area-file {
+          gap: 10px;
+          font-family: BlissPro-Regular;
+          font-size: 14px;
+          line-height: 16px;
+          color: #4C4C4C;
+          .green-link {
+            text-decoration: underline;
+            color: #47B16F;
+          }
+          .expansion {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+      .wpcf7-list-item {
+        margin-top: 15px;
+        margin-left: 0px;
+        label {
+          display: flex;
+          align-items: flex-start;
+          .wpcf7-list-item-label {
+            width: 233px;
+          }
+        }
+      }
+      .info-area__button {
+        margin-top: 33px;
+        width: 322px;
+        border-radius: 45px;
+      }
+    }
+  }
+  .mfp-wrap.mfp-close-btn-in.mfp-auto-cursor.mfp-ready {
+    height: 100% !important;
+  }
+
+  .popup__sent {
+    flex-direction: column;
+    gap: unset;
+    width: 322px;
+    height: 316px;
+    padding-top: 20px;
+    padding-bottom: 56px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 15px;
+    .sent__closed {
+      display: flex;
+      justify-content: flex-end;
+      order: 1;
+      margin-right: 8px;
+    }
+    .sent__info {
+      order: 2;
+      .info__image {
+        margin-top: 21px;
+      }
+      .info__text {
+        margin-top: 30px;
+        width: 298px;
+        font-size: 32px;
+        line-height: 38px;
+      }
+    }
+  }
+
+  .popup__failed {
+    flex-direction: column;
+    gap: unset;
+    width: 322px;
+    height: 316px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 15px;
+    .failed__closed {
+      display: flex;
+      justify-content: flex-end;
+      order: 1;
+      margin-right: 8px;
+    }
+    .failed__info {
+      order: 2;
+      .info__image {
+        margin-top: 21px;
+      }
+      .info__text {
+        gap: 9px;
+        margin-top: 30px;
+        width: 298px;
+        .text__top {
+          font-size: 32px;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+}

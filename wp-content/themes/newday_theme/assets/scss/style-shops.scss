@@ -1,0 +1,565 @@
+.shops {
+  .mobile-header__banner {
+    position: relative;
+    //display: flex;
+    display: none;
+    //max-width: 430px;
+    width: 100%;
+    height: 708px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/wp-content/themes/newday_theme/assets/images/banner-shops-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    //border-bottom-left-radius: 25px;
+    //border-bottom-right-radius: 25px;
+    border-radius: 0 0 25px 25px;
+    @include tablet {
+      display: flex;
+    }
+    .banner__content {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      .content__first-logo {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        z-index: 1003;
+        transition: transform 0.5s linear;
+        transform: translateY(0);
+      }
+      .content__text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        gap: 15px;
+        text-align: center;
+        div {
+          font-family: BlissPro-Light;
+          font-size: 64px;
+          line-height: 64px;
+          color: #FFFFFF;
+        }
+      }
+      .content__second-logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 253px;
+      }
+    }
+  }
+  .desktop-header__banner {
+    position: relative;
+    display: flex;
+    margin: auto;
+    max-width: 1680px;
+    width: 100%;
+    height: 549px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/wp-content/themes/newday_theme/assets/images/banner-shops-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    //border-bottom-left-radius: 25px;
+    //border-bottom-right-radius: 25px;
+    border-radius: 0 0 25px 25px;
+    @include tablet {
+      display: none;
+    }
+    .banner__text {
+      display: flex;
+      flex-direction: column;
+      max-width: 890px;
+      width: 100%;
+      margin-top: 176px;
+      margin-left: auto;
+      margin-right: auto;
+      div {
+        display: flex;
+        gap: 10px;
+        font-family: BlissPro-Light;
+        font-size: 130px;
+        line-height: 128px;
+        color: #FFFFFF;
+      }
+      .text__bottom {
+        justify-content: flex-end;
+      }
+    }
+  }
+  .shops-body {
+    max-width: 1205px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    .shops-body__about {
+      margin-top: 70px;
+      .about__first-image {
+        margin-top: 205px;
+        position: absolute;
+        left: 0;
+        @include mobile {
+          display: none;
+        }
+      }
+      .about__second-image {
+        margin-top: 125px;
+        position: absolute;
+        right: 0;
+      }
+      .about__info {
+        position: relative;
+        display: flex;
+        @include tablet {
+          flex-direction: column;
+          align-items: center;
+        }
+        .info__name {
+          display: flex;
+          justify-content: flex-end;
+          font-family: BlissPro-Regular;
+          font-size: 20px;
+          line-height: 20px;
+          color: #000000;
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          writing-mode: vertical-rl;
+          transform: rotate(180deg);
+          @include tablet {
+            background: white;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+        .info__text {
+          max-width: 508px;
+          margin-left: 69px;
+          font-family: BlissPro-Regular;
+          font-size: 32px;
+          line-height: 50px;
+          color: #000000;
+          @include tablet {
+            margin: 0;
+          }
+        }
+        .info__image {
+          border-bottom-left-radius: 25px;
+          border-bottom-right-radius: 25px;
+          margin-left: 48px;
+          width: 530px;
+          height: 530px;
+          @include tablet {
+            width: unset;
+            max-width: 530px;
+            margin: 0;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .shops-body__maps {
+      margin-top: 129px;
+      .maps__first-image {
+        margin-top: 550px;
+        position: absolute;
+        left: 0;
+      }
+      .maps__name {
+        width: 652px;
+        //margin-left: auto;
+        //margin-right: auto;
+        margin: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        @include tablet {
+          width: auto;
+        }
+        .name__top {
+          @include tablet {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .name__bottom {
+          display: flex;
+          justify-content: flex-end;
+          @include tablet {
+            justify-content: center;
+          }
+        }
+        div {
+          font-family: BlissPro-Light;
+          font-size: 96px;
+          line-height: 1;
+          color: #000000;
+          @include tablet {
+            font-size: 48px;
+          }
+        }
+      }
+      .maps__map {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 69px;
+        .map__yandex {
+          max-width: 1100px;
+          width: 100%;
+          height: 360px;
+          .ymaps-2-1-79-float-button,
+          .ymaps-2-1-79-controls__control_toolbar,
+          .ymaps-2-1-79-gotoymaps__container,
+          .ymaps-2-1-79-gototech {
+            display: none;
+          }
+        }
+        .map__adress {
+          //display: flex;
+          //flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 31px 87px;
+          max-width: 1100px;
+          width: 100%;
+          background-color: #6F902E;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          //padding-top: 36px;
+          //padding-bottom: 77px;
+          //padding-left: 37px;
+          padding: 36px 36px 77px;
+          @include tablet {
+            grid-template-columns: 1fr;
+          }
+          .adress__text {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 20px 1fr;
+            gap: 20px;
+            cursor: pointer;
+            @include mobile {
+              gap: 16px;
+              align-items: center;
+            }
+            svg {
+              --circle-color: #D9D9D9;
+              margin-top: 9px;
+              margin-right: 30px;
+              @include mobile {
+                margin: 0;
+              }
+              circle {
+                fill: #D9D9D9;
+                transition: fill 0.2s ease-in-out;
+              }
+            }
+            p {
+              max-width: 400px;
+              font-family: BlissPro-Regular;
+              font-size: 24px;
+              line-height: 32px;
+              color: #FFFFFF;
+            }
+            &:hover {
+              svg {
+                circle {
+                  fill: #EE7100;
+                }
+              }
+            }
+          }
+          .active {
+            svg {
+              circle {
+                fill: #EE7100;
+              }
+            }
+          }
+        }
+      }
+    }
+    .shops-body__feedback {
+      margin-top: 80px;
+      padding-top: 83px;
+      margin-bottom: 191px;
+      .feedback__first-image {
+        margin-top: 155px;
+        position: absolute;
+        right: 0;
+      }
+      .feedback__info {
+        position: relative;
+        display: flex;
+        @include tablet {
+          flex-direction: column;
+          align-items: center;
+        }
+        .info__name {
+          display: flex;
+          justify-content: flex-end;
+          font-family: BlissPro-Regular;
+          font-size: 20px;
+          line-height: 20px;
+          color: #000000;
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          writing-mode: vertical-rl;
+          transform: rotate(180deg);
+          @include tablet {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(255, 255, 255, 0.5);
+          }
+        }
+        .info__text {
+          width: 500px;
+          margin-top: 60px;
+          margin-left: 70px;
+          gap: 43px;
+          @include tablet {
+            width: auto;
+            max-width: 500px;
+            margin-left: 0;
+          }
+          .text__top {
+            font-family: BlissPro-Light;
+            font-size: 64px;
+            line-height: 64px;
+            color: #000000;
+          }
+          .text__bottom {
+            margin-top: 43px;
+            font-family: BlissPro-Regular;
+            font-size: 24px;
+            line-height: 32px;
+            color: #000000;
+            a {
+              text-decoration: none;
+              color: #EE7100;
+              transition: color 0.2s ease-in-out;
+              &:hover {
+                color: #47B16F;
+              }
+            }
+          }
+          .text__button {
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 29px;
+            grid-column: 2;
+            width: 202px;
+            height: 45px;
+            background-color: #47B16F;
+            transition: background-color .7s ease-in-out;
+            border-radius: 22.5px;
+            cursor: pointer;
+            text-decoration: none;
+            .button__first-part {
+              display: flex;
+              align-items: center;
+              transition: transform .7s;
+              .first-part__text {
+                font-family: BlissPro-Regular;
+                font-size: 18px;
+                line-height: 18px;
+                color: #FFFFFF;
+              }
+              .first-part__svg {
+                transform: translateX(-170%);
+                position: absolute;
+                right: calc(100% + 23px);
+                transition: transform .7s;
+              }
+            }
+            .button__second-part {
+              transition: transform .7s;
+              margin-left: 23px;
+              margin-right: 9px;
+            }
+            &:hover {
+              background-color: #262626;
+              .button__first-part {
+                transform: translateX(38px);
+                transition-delay: .1s;
+                .first-part__text {
+                }
+                .first-part__svg {
+                  transform: translateX(0);
+                  transition-delay: .1s;
+                }
+              }
+              .button__second-part {
+                transform: translateX(375%);
+                transition-delay: .1s;
+              }
+            }
+          }
+        }
+        .info__image {
+          max-width: 530px;
+          height: 530px;
+          margin-left: 50px;
+          @include tablet {
+            margin-left: 0;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include small-mobile {
+  .shops {
+    .shops-body {
+      .shops-body__about {
+        margin-top: 59px;
+        .about__first-image {
+          display: none;
+        }
+        .about__second-image {
+          display: none;
+        }
+        .about__info {
+          flex-direction: column;
+          .info__name {
+            justify-content: unset;
+            padding-top: unset;
+            writing-mode: unset;
+            transform: unset;
+            margin-left: 12px;
+          }
+          .info__text {
+            margin-top: 20px;
+            margin-left: 12px;
+            margin-right: 12px;
+            width: unset;
+            font-size: 20px;
+            line-height: 28px;
+          }
+          .info__image {
+            margin-left: unset;
+            margin-top: 30px;
+            max-width: 400px;
+            width: 100%;
+            height: unset;
+            img {
+              width: inherit;
+            }
+          }
+        }
+      }
+      .shops-body__maps {
+        margin-top: 58px;
+        .maps__first-image {
+          display: none;
+        }
+        .maps__name {
+          width: 227px;
+          div {
+            font-size: 40px;
+            line-height: 40px;
+          }
+        }
+        .maps__map {
+          margin-top: 56px;
+          .map__yandex {
+            .ymaps-2-1-79-float-button,
+            .ymaps-2-1-79-controls__control_toolbar,
+            .ymaps-2-1-79-gotoymaps__container,
+            .ymaps-2-1-79-gototech {
+              display: none;
+            }
+          }
+          .map__adress {
+            flex-direction: column;
+            flex-wrap: unset;
+            gap: 34px 0px;
+            padding-left: 11px;
+            padding-top: 40px;
+            padding-bottom: 48px;
+            .adress__text {
+              svg {
+                margin-right: 21px;
+                margin-top: 5px;
+              }
+              p {
+                width: 274px;
+                font-size: 18px;
+                line-height: 24px;
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .shops-body__feedback {
+        margin-top: 60px;
+        margin-bottom: 87px;
+        .feedback__first-image {
+          display: none;
+        }
+        .feedback__info {
+          flex-direction: column;
+          .info__name {
+            justify-content: unset;
+            padding-top: unset;
+            writing-mode: unset;
+            transform: unset;
+            margin-left: 12px;
+          }
+          .info__text {
+            width: 339px;
+            margin-left: 7px;
+            margin-right: 7px;
+            margin-top: 35px;
+            .text__top {
+              font-size: 36px;
+              line-height: 40px;
+              br {
+                display: none;
+              }
+            }
+            .text__bottom {
+              margin-top: 20px;
+              font-size: 20px;
+              line-height: 28px;
+            }
+          }
+          .info__image {
+            margin-left: unset;
+            margin-top: 40px;
+            max-width: 400px;
+            width: 100%;
+            height: unset;
+            img {
+              width: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}

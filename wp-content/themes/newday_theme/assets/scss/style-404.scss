@@ -1,0 +1,83 @@
+.desktop-404 {
+  height: 100vh;
+  position: relative;
+  background-image: url("/wp-content/themes/newday_theme/assets/images/background-404.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 157px;
+  overflow: hidden;
+  .desktop-404__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 365px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    .info__logo {
+      display: none;
+    }
+    .info__code {
+      padding-top: 207px;
+      font-family: BlissPro-Heavy;
+      font-size: 200px;
+      line-height: 238px;
+      color: #E84148;
+    }
+    .info__textTop {
+      font-family: BlissPro-Light;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000000;
+    }
+    .info__textBottom {
+      margin-top: 10px;
+      font-family: BlissPro-Light;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000000;
+      a {
+        color: #EE7100;
+        text-underline-offset: 6px;
+        transition: color 0.3s;
+      }
+      a:hover {
+        color: #47B16F;
+      }
+    }
+  }
+}
+
+@include small-mobile {
+  .desktop-404 {
+    background-image: url("/wp-content/themes/newday_theme/assets/images/background-404_mobile.png");
+    background-position-y: 55px;
+    .desktop-404__info {
+      .info__logo {
+        padding-top: 10px;
+        display: block;
+      }
+      .info__code {
+        padding-top: 220px;
+        font-size: 158px;
+        line-height: 188px;
+      }
+      .info__textTop {
+        font-size: 20px;
+        line-height: 23px;
+      }
+      .info__textBottom {
+        font-size: 20px;
+        line-height: 23px;
+        a {
+
+        }
+        a:hover {
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,534 @@
+.vacancy {
+  background-image: url("/wp-content/themes/newday_theme/assets/images/background-vacancy.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position-y: 404px;
+  .mobile-header__banner {
+    position: relative;
+    //display: flex;
+    display: none;
+    //max-width: 430px;
+    width: 100%;
+    height: 708px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/wp-content/themes/newday_theme/assets/images/banner-vacancy-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    @include tablet {
+      display: flex;
+    }
+    .banner__content {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      .content__first-logo {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        z-index: 1003;
+        transition: transform 0.5s linear;
+        transform: translateY(0);
+      }
+      .content__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 140px;
+        gap: 10px;
+        text-align: center;
+        div {
+          width: 260px;
+          font-family: BlissPro-Light;
+          font-size: 64px;
+          line-height: 64px;
+          color: #FFFFFF;
+        }
+        .text__top {
+          margin-right: 65px;
+        }
+        .text__bottom {
+          margin-left: 65px;
+        }
+      }
+      .content__second-logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 120px;
+      }
+    }
+  }
+  .desktop-header__banner {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1680px;
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/wp-content/themes/newday_theme/assets/images/banner-vacancy-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    @include tablet {
+      display: none;
+    }
+    .banner__text {
+      display: flex;
+      flex-direction: column;
+      max-width: 959px;
+      width: 100%;
+      margin-top: 181px;
+      margin-left: auto;
+      margin-right: auto;
+      div {
+        display: flex;
+        font-family: BlissPro-Light;
+        font-size: 130px;
+        line-height: 128px;
+        color: #FFFFFF;
+      }
+      .text__bottom {
+        justify-content: flex-end;
+      }
+    }
+  }
+  .vacancy-body {
+    max-width: 1060px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    .vacancy-body__top {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 75px;
+      @include tablet {
+        flex-direction: column;
+        gap: 2em;
+      }
+      .top__name {
+        font-family: BlissPro-Light;
+        font-size: 96px;
+        line-height: 96px;
+        color: #000000;
+        @include tablet {
+          font-size: 48px;
+          text-align: center;
+        }
+      }
+      .top__info {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        background-color: #FFFFFF;
+        border: 1px solid #6F902E;
+        border-radius: 25px;
+        padding-top: 23px;
+        padding-bottom: 20px;
+        padding-left: 43px;
+        padding-right: 154px;
+        @include tablet {
+          padding: 24px;
+          align-items: center;
+        }
+        .info__top {
+          font-family: BlissPro-Medium;
+          font-size: 18px;
+          line-height: 24px;
+          color: #1F4D30;
+          text-transform: uppercase;
+        }
+        .info__bottom {
+          display: flex;
+          gap: 50px;
+          a {
+            font-family: BlissPro-Medium;
+            font-size: 18px;
+            line-height: 24px;
+            color: #EE7100;
+            text-decoration: none;
+            transition: color 0.3s;
+            &:hover {
+              color: #47B16F;
+            }
+          }
+        }
+      }
+    }
+    .vacancy-body__info {
+      padding-top: 68px;
+      font-family: BlissPro-Regular;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+      max-width: 750px;
+      width: 100%;
+      @include tablet {
+        padding: 68px 2em;
+      }
+      @include small-mobile {
+        padding: 2em 1em;
+      }
+      ul {
+        margin-left: 15px;
+      }
+    }
+    .vacancy-body__bottom {
+      display: flex;
+      padding-top: 68px;
+      padding-bottom: 241px;
+      flex-wrap: wrap;
+      gap: 42px 30px;
+      @include tablet {
+        justify-content: center;
+      }
+      .bottom__vacancy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 500px;
+        height: 300px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 43px;
+        padding-right: 43px;
+        background-color: #FFFFFF;
+        border: 1px solid #6F902E;
+        border-radius: 25px;
+        text-decoration: none;
+        .vacancy__name {
+          height: 115px;
+          font-family: BlissPro-Medium;
+          font-size: 32px;
+          line-height: 40px;
+          color: #000000;
+        }
+        .vacancy__salary {
+          margin-bottom: 20px;
+          font-family: BlissPro-Regular, sans-serif, system-ui;
+          font-size: 24px;
+          line-height: 40px;
+          color: #000000;
+        }
+        .vacancy__button {
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          width: 218px;
+          height: 45px;
+          background-color: #1F4D30;
+          border-radius: 22.5px;
+          transition: background-color .7s ease-in-out;
+          cursor: pointer;
+          text-decoration: none;
+          .button__first-part {
+            display: flex;
+            align-items: center;
+            transition: transform .7s;
+            .first-part__text {
+              font-family: BlissPro-Regular;
+              font-size: 18px;
+              line-height: 18px;
+              color: #FFFFFF;
+            }
+            .first-part__svg {
+              transform: translateX(-170%);
+              position: absolute;
+              right: calc(100% + 23px);
+              transition: transform .7s;
+            }
+          }
+          .button__second-part {
+            transition: transform .7s;
+            margin-left: 38px;
+            margin-right: 9px;
+          }
+          &:hover {
+            background-color: #6F902E;
+            .button__first-part {
+              transform: translateX(25px);
+              transition-delay: .1s;
+              .first-part__text {
+              }
+              .first-part__svg {
+                transform: translateX(-40%);
+                transition-delay: .1s;
+              }
+            }
+            .button__second-part {
+              transform: translateX(375%);
+              transition-delay: .1s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.single-vacancy {
+  display: flex;
+  gap: 170px;
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 134px;
+  .single-vacancy__closed {
+    svg {
+      scale: 1;
+      transition: scale 0.3s ease-in-out;
+      &:hover {
+        scale: 1.10;
+      }
+    }
+    width: 16px;
+    height: 16px;
+    stroke-width: 0.1;
+    transition: stroke-width 0.3s;
+
+    &:hover {
+      stroke-width: 0.7;
+    }
+  }
+  .single-vacancy__body {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    width: 715px;
+    .body__name {
+      font-family: BlissPro-Medium;
+      font-size: 40px;
+      line-height: 40px;
+      color: #000000;
+    }
+    .body__duties {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .duties__name {
+        font-family: BlissPro-Bold;
+        font-size: 24px;
+        line-height: 40px;
+        color: #000000;
+      }
+      .duties__info {
+        display: flex;
+        gap: 15px;
+        font-family: BlissPro-Regular;
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+        svg {
+          margin-top: 12px;
+        }
+        p {
+          width: 700px;
+        }
+      }
+    }
+    .body__requirements {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .requirements__name {
+        font-family: BlissPro-Bold;
+        font-size: 24px;
+        line-height: 40px;
+        color: #000000;
+      }
+      .requirements__info {
+        display: flex;
+        gap: 15px;
+        font-family: BlissPro-Regular;
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+        svg {
+          margin-top: 12px;
+        }
+        p {
+          width: 700px;
+        }
+      }
+    }
+    .body__conditions {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .conditions__name {
+        font-family: BlissPro-Bold;
+        font-size: 24px;
+        line-height: 40px;
+        color: #000000;
+      }
+      .conditions__info {
+        display: flex;
+        gap: 15px;
+        font-family: BlissPro-Regular;
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+        svg {
+          margin-top: 12px;
+        }
+        p {
+          width: 700px;
+        }
+      }
+    }
+    .body__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 50px;
+      border-radius: 30px;
+      background-color: #1F4D30;
+      font-family: BlissPro-Medium;
+      font-size: 24px;
+      color: #FFFFFF;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: #000000;
+      }
+    }
+  }
+}
+
+@include small-mobile {
+  .vacancy {
+    background-image: unset;
+    .vacancy-body {
+      .vacancy-body__top {
+        margin-top: 52px;
+        .top__name {
+          margin-left: 10px;
+          font-size: 48px;
+          line-height: 48px;
+        }
+        .top__info {
+          display: none;
+        }
+      }
+      .vacancy-body__bottom {
+        padding-top: 49px;
+        padding-bottom: 77px;
+        justify-content: center;
+        gap: 15px 0px;
+        .bottom__vacancy {
+          width: 346px;
+          height: 200px;
+          padding-top: 20px;
+          padding-bottom: 17px;
+          padding-left: 29px;
+          padding-right: 29px;
+          .vacancy__name {
+            font-size: 20px;
+            line-height: 27px;
+            height: 80px;
+          }
+          .vacancy__salary {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 10px;
+          }
+          .vacancy__button {
+            width: 194px;
+            height: 40px;
+            border-radius: 22px;
+            .button__first-part {
+              .first-part__text {
+                font-size: 16px;
+                line-height: 18px;
+              }
+            }
+            .button__second-part {
+              margin-left: 25px;
+              margin-right: 6px;
+            }
+            &:hover {
+              .button__first-part {
+                transform: translateX(5px);
+                .first-part__svg {
+                  transform: translateX(5%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .single-vacancy {
+    flex-direction: column;
+    gap: 21px;
+    margin-top: 32px;
+    margin-bottom: 41px;
+    max-width: 430px;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    .single-vacancy__closed {
+      order: 1;
+      display: flex;
+      justify-content: flex-end;
+      width: unset;
+      height: unset;
+    }
+    .single-vacancy__body {
+      width: unset;
+      order: 2;
+      gap: 37px;
+      .body__name {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      .body__duties {
+        gap: 20px;
+        .duties__info {
+          font-size: 18px;
+          line-height: 26px;
+          p {
+            width: 310px;
+          }
+        }
+      }
+      .body__requirements {
+        gap: 20px;
+        .requirements__info {
+          font-size: 18px;
+          line-height: 26px;
+          p {
+            width: 310px;
+          }
+        }
+      }
+      .body__conditions {
+        gap: 20px;
+        .conditions__info {
+          font-size: 18px;
+          line-height: 26px;
+          p {
+            width: 310px;
+          }
+        }
+      }
+      .body__button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

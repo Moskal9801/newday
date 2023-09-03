@@ -1,0 +1,474 @@
+
+.privacy-policy {
+  .default-page {
+    max-width: 850px;
+    p:last-child {
+      padding-bottom: 100px;
+      @include small-mobile {
+        padding-bottom: unset;
+      }
+    }
+    @include small-mobile {
+      align-items: unset;
+    }
+  }
+}
+
+.documents {
+  .default-page {
+    max-width: 1190px;
+    div:last-child {
+      margin-bottom: 100px;
+    }
+  }
+  @include small-mobile {
+    .default-page {
+      .wp-block-file {
+        align-items: unset;
+        flex-direction: column;
+        gap: unset;
+        a {
+          &:last-child {
+            width: 70px;
+            padding-left: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.default-page {
+  display: flex;
+  flex-direction: column;
+  max-width: 1230px;
+  padding: 153px 15px 0px 15px;
+  width: 100%;
+  margin: 0 auto;
+  .content__first-logo {
+    display: none;
+  }
+  .wp-block-file__button {
+    background: unset !important;
+  }
+  .wp-block-file {
+    align-items: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    a {
+      margin-left: unset;
+      font-family: BlissPro-Regular;
+      font-size: 20px;
+      line-height: 32px;
+      color: #262626;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      &:first-child {
+        pointer-events: none;
+        cursor: default;
+      }
+      &:last-child {
+        position: relative;
+        padding-left: 3px;
+        color: #EE7100;
+        &:before {
+          top: 2px;
+          right: -33px;
+          width: 23px;
+          height: 23px;
+          position: absolute;
+          content: '';
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" viewBox="0 0 24 24" id="download"><path d="M21,14a1,1,0,0,0-1,1v4a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V15a1,1,0,0,0-2,0v4a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V15A1,1,0,0,0,21,14Zm-9.71,1.71a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l4-4a1,1,0,0,0-1.42-1.42L13,12.59V3a1,1,0,0,0-2,0v9.59l-2.29-2.3a1,1,0,1,0-1.42,1.42Z" fill="%238EBF2F"></path></svg>');
+        }
+        &:after {
+          opacity: 1;
+          transition: opacity 0.3s ease-in-out;
+          top: 2px;
+          right: -33px;
+          width: 23px;
+          height: 23px;
+          position: absolute;
+          content: '';
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px" viewBox="0 0 24 24" id="download"><path d="M21,14a1,1,0,0,0-1,1v4a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V15a1,1,0,0,0-2,0v4a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V15A1,1,0,0,0,21,14Zm-9.71,1.71a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l4-4a1,1,0,0,0-1.42-1.42L13,12.59V3a1,1,0,0,0-2,0v9.59l-2.29-2.3a1,1,0,1,0-1.42,1.42Z" fill="%23EE7100"></path></svg>');
+        }
+      }
+      &:hover {
+        color: #8EBF2F;
+        &:last-child {
+          &:before {
+          }
+          &:after {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    font-family: BlissPro-Light;
+    font-size: 64px;
+    line-height: 72px;
+    color: #262626;
+    margin-top: 15px;
+    padding-bottom: 50px;
+  }
+  .wp-block-image {
+    padding-bottom: 50px;
+    img {
+      width: 1170px;
+      height: 530px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    };
+    .wp-element-caption {
+      padding-top: 17px;
+      font-family: BlissPro-Regular;
+      font-size: 20px;
+      line-height: 32px;
+      color: #262626;
+    }
+  }
+  .has-medium-font-size {
+    width: 700px;
+    font-family: BlissPro-Regular;
+    font-size: 32px !important;
+    line-height: 50px !important;
+    color: #262626;
+    padding-bottom: 20px;
+  }
+  .has-small-font-size {
+    width: 670px;
+    font-family: BlissPro-Regular;
+    font-size: 20px !important;
+    line-height: 32px !important;
+    color: #262626;
+    padding-bottom: 20px;
+  }
+  ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    li {
+      font-family: BlissPro-Regular;
+      font-size: 20px !important;
+      line-height: 32px !important;
+      color: #262626;
+      padding-bottom: unset !important;
+    }
+    li::marker {
+      color: #262626;
+    }
+  }
+  ol {
+    margin-bottom: 50px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: decimal;
+    li {
+      font-family: BlissPro-Regular;
+      font-size: 20px !important;
+      line-height: 32px !important;
+      color: #262626;
+      padding-bottom: unset !important;
+      ul {
+        margin-bottom: unset;
+        gap: 12px;
+        li {
+
+        }
+        li::marker {
+          color: #8E8E8E;
+        }
+        &:first-child {
+          padding-top: 12px;
+        }
+      }
+    }
+    li::marker {
+      color: #8EBF2F;
+    }
+  }
+  .slider-gallery {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    .slider-btn {
+      cursor: pointer;
+    }
+    .wp-block-gallery.columns-1 {
+      width: 1045px !important;
+      .swiper-wrapper {
+        .wp-block-image {
+          padding-bottom: unset;
+          border-bottom-left-radius: 25px;
+          border-bottom-right-radius: 25px;
+          &:hover {
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+          }
+          img {
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+          }
+        }
+      }
+    }
+  }
+  .wp-block-gallery.columns-2 {
+    margin-bottom: 50px;
+    gap: 25px;
+    .wp-block-image {
+      flex-grow: unset;
+      width: 510px !important;
+      height: 270px !important;
+      padding-bottom: unset;
+      border-radius: 25px;
+      &:hover {
+        border-radius: 25px;
+      }
+      img {
+        border-radius: 25px;
+        width: 510px !important;
+        height: 270px !important;
+        padding-bottom: unset;
+      }
+    }
+    figcaption {
+      font-family: BlissPro-Regular;
+      font-size: 20px;
+      line-height: 32px;
+      color: #262626;
+      text-align: unset;
+    }
+  }
+  .wp-block-gallery {
+    .wp-block-image {
+      &:hover {
+        background-image: url("/wp-content/themes/newday_theme/assets/images/magnifier.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #000000;
+        a {
+          opacity: 65%;
+        }
+      }
+    }
+  }
+  .wp-block-quote {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 41px;
+    p {
+      position: relative;
+      width: 580px;
+      font-family: BlissPro-Regular;
+      font-size: 20px !important;
+      line-height: 32px !important;
+      color: #262626;
+      margin-bottom: 15px;
+      &:after {
+        right: -5px;
+        bottom: -15px;
+        position: absolute;
+        content: url("/wp-content/themes/newday_theme/assets/images/after-quote.png");
+      }
+      &:before {
+        top: 5px;
+        left: -41px;
+        position: absolute;
+        content: url("/wp-content/themes/newday_theme/assets/images/before-quote.png");
+      }
+    }
+    cite {
+      font-family: BlissPro-Regular;
+      font-size: 20px !important;
+      line-height: 32px !important;
+      color: #262626;
+      font-style: unset;
+    }
+  }
+  .wp-block-table {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-bottom: 50px;
+    figcaption {
+      order: 1;
+      font-family: BlissPro-Regular;
+      font-size: 20px !important;
+      line-height: 32px !important;
+      color: #262626;
+    }
+    table {
+      border: 1px solid #8EBF2F;
+      border-radius: 5px;
+      border-collapse: separate;
+      order: 2;
+      tbody {
+        tr {
+          td {
+            border: 1px solid #8EBF2F;
+            font-family: BlissPro-Light;
+            font-size: 18px !important;
+            line-height: 24px !important;
+            color: #262626;
+            padding-top: 17px;
+            padding-bottom: 15px;
+            padding-right: 20px;
+            padding-left: 20px;
+            &:first-child {
+              padding-left: 30px;
+              padding-right: 30px;
+            }
+          }
+          &:first-child {
+            background-color: #8EBF2F;
+            td {
+              color: #FFFFFF;
+              padding-left: 24px;
+              &:first-child {
+                padding-left: 34px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include small-mobile {
+  .default-page {
+    padding-top: 110px;
+    .content__first-logo {
+      transition: transform 0.5s linear;
+      transform: translateY(0);
+      position: absolute;
+      z-index: 1002;
+      display: flex;
+      justify-content: center;
+      top: 10px;
+      left: 0;
+      right: 0;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 40px;
+      padding-bottom: 30px;
+    }
+    .wp-block-file {
+      &:last-child {
+        margin-bottom: unset;
+      }
+    };
+    .wp-block-image {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 30px;
+      img {
+        width: 346px;
+        height: 346px;
+        padding-bottom: unset;
+      };
+      .wp-element-caption {
+        display: none;
+      }
+    }
+    .has-medium-font-size {
+      width: unset;
+      font-size: 24px !important;
+      line-height: 32px !important;
+      padding-bottom: 30px;
+    }
+    .has-small-font-size {
+      width: unset;
+      font-size: 18px !important;
+      line-height: 28px !important;
+      padding-bottom: 30px;
+    }
+    ul {
+      margin-bottom: 30px;
+    }
+    ol {
+      margin-bottom: 30px;
+      li {
+        ul {
+          gap: 10px;
+          &:first-child {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+    .wp-block-gallery {
+      margin-bottom: 30px;
+    }
+    .wp-block-quote {
+      margin-bottom: 30px;
+      padding-left: 36px;
+      p {
+        position: relative;
+        width: 268px;
+        font-family: BlissPro-Regular;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        margin-bottom: 8px;
+        &:after {
+          right: -10px;
+          bottom: -25px;
+        }
+        &:before {
+          top: -5px;
+          left: -37px;
+        }
+      }
+      cite {
+        font-size: 14px !important;
+        line-height: 16px !important;
+      }
+    }
+    .wp-block-table {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+      margin-bottom: 50px;
+      figcaption {
+        font-size: 20px !important;
+        line-height: 32px !important;
+      }
+      table {
+        tbody {
+          tr {
+            td {
+              font-size: 16px !important;
+              padding-top: 13px;
+              padding-bottom: 13px;
+              padding-right: 14px;
+              padding-left: 14px;
+              &:first-child {
+                padding-left: 12px;
+                padding-right: 12px;
+              }
+            }
+            &:first-child {
+              td {
+                padding-left: 14px;
+                &:first-child {
+                  padding-left: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

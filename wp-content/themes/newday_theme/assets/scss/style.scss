@@ -1,0 +1,84 @@
+$transition: .3s ease-in-out;
+$transitionSlow: .6s ease-in-out;
+
+@import "reset";
+@import "fonts";
+@import "hamburger";
+@import "magnific-popup";
+@import "swiper-bundle";
+@import "mixins";
+
+@import "style-contacts";
+@import "style-vacancy";
+@import "style-shops";
+@import "style-products";
+@import "style-about";
+@import "style-home";
+@import "style-page";
+@import "style-popup";
+@import "style-header";
+@import "style-footer";
+@import "style-404";
+@import "style-animations";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mfp-figure:after {
+  box-shadow: unset;
+  background: unset;
+}
+
+img.mfp-img {
+  padding-top: unset;
+  padding-bottom: unset;
+}
+
+.popup-video {
+  .popup-video__closed {
+    display: flex;
+    justify-content: flex-end;
+
+    svg {
+      margin-bottom: 15px;
+      margin-right: 5px;
+      scale: 1.5;
+      cursor: pointer;
+      stroke-width: 0.05;
+      transition: stroke-width 0.3s;
+    }
+
+    svg:hover {
+      stroke-width: 0.4;
+    }
+  }
+
+  .popup-video__video {
+    max-width: 1280px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.mfp-content {
+  width: unset !important;
+}
+
+.mfp-close {
+  color: black !important;
+  opacity: 1 !important;
+  font-size: 35px !important;
+  scale: 1;
+  transition: scale 0.4s ease-in-out;
+  &:hover {
+    scale: 1.2;
+  }
+}
+
+
+
+
+
+
+
